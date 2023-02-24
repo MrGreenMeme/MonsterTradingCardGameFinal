@@ -1,0 +1,61 @@
+Protokoll:
+
+Design:
+    Database:
+        DatabaseConnection
+    Game:
+        Battle
+        Card
+        CardHandler
+        ElementType
+        MonsterCard
+        MonsterType
+        SpellCard
+        TemplateCard
+        Trading
+        User
+        Userhandling
+    Server:
+        Http_Parser
+        Request
+        Response
+        ResponseHandler
+        Server
+
+
+Lessons Learned:
+Postgres Datenbank aufzusetzen (pgAdmin) + mit IntelliJ verbinden + DB-Driver
+Wie ein Http-Server aufgebaut ist und funktioniert.
+Wie Unit Tests erstellt werden.
+mit maven-projekt struktur auseinander gesetzt (vor allem die dependencies)
+
+
+Unit Testing:
+Installation von Mockito hat leider nicht funktioniert also reine Tests mit Junit.
+Unit Test sollen die Sicherheit geben dass einzelne Komponenten funktionieren 
+und vor allem in einem eh schon dichten Projekt ist es dann schwierig diese Komponenten einzeln zu testen. 
+4 Tests zum Server
+4 Tests zum User
+5 Tests zum Deck
+7 Test zu den Karten und deren DamageCalculation
+
+
+Unique Feature:
+Kill-Streak - wenn eine Karte eine andere Karte schlägt sammelt sie BonusPunkte
+=> bei 3 BonusPunkten "leveled" die Karte auf und der Damage erhöht sich.
+
+
+Nicht implementiert:
+show configured in different representations
+
+Tracked Time:
+Laptop-Zeit: circa 20 Stunden
+Habe vom Laptop auf meinen Laptop gewechselt um Produktivität zu erhöhen (24 Zoll statt 14 Zoll display). 
+Desktop-Zeit circa 75 Stunden
+Die meiste Zeit habe am Http-Server gebraucht am zweit meisten Zeit habe ich mit dem Debuggen verbraucht. 
+ 
+
+Git-Link:
+https://github.com/MrGreenMeme/MonsterTradingCardGameFinal
+
+
